@@ -9,12 +9,6 @@ if __name__ == "__main__":
     else:
         search_query = "-".join(search_query.lower().split(" "))
     url = f"https://www.olx.in/items/q-{search_query}?isSearchCall=true"
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                    "AppleWebKit/537.36 (KHTML, like Gecko) "
-                    "Chrome/120.0.0.0 Safari/537.36",
-        "Accept-Language": "en-US,en;q=0.9",
-    }
     driver = webdriver.Chrome()
     driver.get(url)
     product_cards = driver.find_elements(by=By.CSS_SELECTOR, value="a > div")
