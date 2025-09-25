@@ -1,0 +1,5 @@
+Columns which can be used to connect tables
+
+1. ncbi_id
+2. rfam_acc
+3. rfamseq_acc
